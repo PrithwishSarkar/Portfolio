@@ -11,6 +11,7 @@
 .about-section-1 {
     width: 35%;
     align-items: center;
+    /* margin-top: 10px; */
 }
 
 .about-section-2 {
@@ -26,6 +27,7 @@
 .about-section-1 img {
     /* width: 350px; */
     width: 100%;
+    
 }
 
 .details {
@@ -57,7 +59,7 @@
 }
 
 .tile-content ul li {
-    list-style: none;
+    /* list-style: none; */
     line-height: 1.5;
     margin: 10px 0;
 }
@@ -65,6 +67,11 @@
 .tile-content ul li span {
     color: aqua;
     font-size: 20px;
+}
+
+.tile-content ol li{
+    margin-left: 25px;
+    line-height: 1;
 }
 
 .tile-content {

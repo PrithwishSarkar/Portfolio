@@ -1,117 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prithwish Sarkar | Web Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="first-style.css">
-    <link rel="stylesheet" href="about-style.css">
-    <link rel="stylesheet" href="work-style.css">
-    <link rel="stylesheet" href="media-style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="first-style.css" />
+    <link rel="stylesheet" href="about-style.css" />
+    <link rel="stylesheet" href="work-style.css" />
+    <link rel="stylesheet" href="media-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="nav">
-            <div class="name">
-                <h1>Prithwish Sarkar</h1>
-            </div>
-            <div class="list">
-                <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#work">Projects</a></li>
-                    <li><a href="#foot">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </div>
+      <div class="nav">
+        <div class="name">
+          <h1>Prithwish Sarkar</h1>
         </div>
+        <div class="list">
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Projects</a></li>
+            <li><a href="#foot">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+      </div>
     </header>
 
-    <div class="main-body">
-
-    </div>
+    <div class="main-body"></div>
     <section class="first" id="first">
-        <div class="firstleft">
-            <!-- <span id="element">Hello there! I am <span class="name">Prithwish</span></span>
+      <div class="firstleft">
+        <!-- <span id="element">Hello there! I am <span class="name">Prithwish</span></span>
             <span id="element">I am a passionate Web Developer</span>
             -->
-            <span id="element"></span>
-        </div>
-        <div class="firstright">
-            <img src="webdev.png" alt="Web developer png image">
-        </div>
+        <span id="element"></span>
+      </div>
+      <div class="firstright">
+        <img src="webdev.png" alt="Web developer png image" />
+      </div>
     </section>
 
     <section class="about" id="about">
-        <div class="about-section-1">
-            <img src="user.png" alt="User Image">
+      <div class="about-section-1">
+        <img src="user.png" alt="User Image" />
+      </div>
+      <div class="about-section-2">
+        <h1>About Me</h1>
+        <br />
+        <p>
+          <strong>MERN Stack Web Developer</strong>, specializing in Front-end
+          technologies, with <strong>over 2 year of experience</strong> (1.5
+          years of professional Front-end experience and over 8 months of
+          experience developing projects). I am proficient in
+          <strong
+            >HTML, CSS, JavaScript, React, and Responsive Web Design</strong
+          >, with intermediate knowledge in
+          <strong
+            >Node.js, Express.js, MongoDB, REST APIs, Git, Bootstrap, and
+            Tailwind CSS</strong
+          >.
+        </p>
+        <br />
+        <p>
+          I like to build
+          <strong
+            >user friendly, scalable, and Responsive designs with engaging
+            aesthetics</strong
+          >. Seeking to work in a creative role where I can use my skills to
+          <strong>solve real-life problems</strong> and design attractive and
+          compelling websites.
+        </p>
+
+        <div class="details">
+          <p class="tile default-tile" onclick="showtile('skills')">Skills</p>
+          <p class="tile" onclick="showtile('experience')">Experience</p>
+          <p class="tile" onclick="showtile('education')">Education</p>
+          <!-- <p class="tile" onclick="showtile('projects')">Projects</p> -->
         </div>
-        <div class="about-section-2">
-            <h1>About Me</h1>
-            <br>
-            <p> <strong>MERN Stack Web Developer</strong>, specializing in Front-end technologies, with <strong>over 2 year of experience</strong> (1.5 years of professional Front-end experience and over 8 months of experience developing projects).
-                I am proficient in <strong>HTML, CSS, JavaScript, React, and Responsive Web Design</strong>, with intermediate knowledge in <strong>Node.js, Express.js, MongoDB, REST APIs, Git, Bootstrap, and Tailwind CSS</strong>.</p>
-                <br>
-                <p>I like to build <strong>user friendly, scalable, and Responsive designs with engaging aesthetics</strong>. Seeking to work in a creative role where I can use my skills to <strong>solve real-life problems</strong> and design attractive and compelling websites.
-            </p>
 
-            <div class="details">
-                <p class="tile default-tile" onclick="showtile('skills')">Skills</p>
-                <p class="tile" onclick="showtile('experience')">Experience</p>
-                <p class="tile" onclick="showtile('education')">Education</p>
-                <!-- <p class="tile" onclick="showtile('projects')">Projects</p> -->
-            </div>
+        <div class="tile-content active-tile" id="skills">
+          <ul>
+            <li>
+              <span>Frontend:</span> HTML, CSS, JavaScript (ES6+), React.js,
+              Redux, jQuery, Bootstrap, Material UI, Responsive Web Design
+            </li>
+            <li><span>Backend:</span> Node.js, Express.js</li>
+            <li><span>Databases:</span> MongoDB</li>
+            <li><span>Version Control:</span> Git and GitHub</li>
+            <li>
+              <span>Tools and Libraries:</span> Chart.js, Socket.IO, RESTful
+              APIs
+            </li>
+            <li><span>MERN Stack Development</span></li>
+            <li><span>Data Structures and Algorithms</span></li>
+            <li><span>Coding:</span> JavaScript, C++, Core Java</li>
+          </ul>
+        </div>
+        <div class="tile-content" id="experience">
+          <ul>
+            <li>
+              <span>Feb 2021 to July 2022 - Tata Consultancy Services(TCS)</span
+              ><br /><strong> Systems Engineer (Front-end Technologies)</strong
+              ><br />Technologies:
+              <strong>React.js, HTML, CSS, JavaScript, OTMM</strong>
+              <br /><br />
+              <p><u>Responsibilities:</u></p>
+              <ol>
+                <li>
+                  Designed and developed the UI of a Digital Asset Library for
+                  an Ed-Tech Company.
+                </li>
+                <li>
+                  Increased readability and responsiveness using CSS. Applied a
+                  mobile-first approach, increasing traffic by 30%.
+                </li>
+                <li>
+                  Created React components to store metadata, access details,
+                  and the media. Implemented API calls to the backend for CRUD
+                  operations.
+                </li>
+                <li>
+                  Spearheaded debugging efforts to eliminate cross-browser
+                  issues, and improved application functionality.
+                </li>
+                <li>
+                  Increased page load speed by 20% through optimized React
+                  components and CSS adjustments.
+                </li>
+                <li>
+                  Media management, font management, and user account management
+                  in OTMM DAL.
+                </li>
+                <li>
+                  Helped resolve transparency issue in .png and .psd images in
+                  Digital Asset Library.
+                </li>
+              </ol>
+            </li>
 
-            <div class="tile-content active-tile" id="skills">
-                <ul>
-                    
-                    <li><span>Frontend:</span>  HTML, CSS, JavaScript (ES6+), React.js, Redux, jQuery, Bootstrap, Material UI, Responsive Web Design</li>
-                    <li><span>Backend:</span>  Node.js, Express.js</li>
-                    <li><span>Databases:</span>  MongoDB</li>
-                    <li><span>Version Control:</span>  Git and GitHub</li>
-                    <li><span>Tools and Libraries:</span>  Chart.js, Socket.IO, RESTful APIs</li>
-                    <li><span>MERN Stack Development</span></li>
-                    <li><span>Data Structures and Algorithms</span></li>
-                    <li><span>Coding:</span>  JavaScript, C++, Core Java</li>
-                </ul>
-            </div>
-            <div class="tile-content" id="experience">
-                <ul>
-                    <li>
-                        <span>Feb 2021 to July 2022 - Tata Consultancy Services(TCS)</span><br><strong> Systems Engineer (Front-end Technologies)</strong><br>Technologies: <strong>React.js, HTML, CSS, JavaScript, OTMM</strong>
-                    <br><br>
-                    <p><u>Responsibilities:</u></p>
-                    <ol>
-                        <li>Designed and developed the UI of a Digital Asset Library for an Ed-Tech Company.</li>
-                        <li>Increased readability and responsiveness using CSS. Applied a mobile-first approach, increasing traffic by 30%.</li>
-                        <li>Created React components to store metadata, access details, and the media. Implemented API calls to the backend for CRUD operations.</li>
-                        <li>Spearheaded debugging efforts to eliminate cross-browser issues, and improved application functionality.</li>
-                        <li>Increased page load speed by 20% through optimized React components and CSS adjustments.</li>
-                        <li>Media management, font management, and user account management in OTMM DAL.</li>
-                        <li>Helped resolve transparency issue in .png and .psd images in Digital Asset Library.</li>
-                    </ol>
-                    </li>
+            <!-- <li><span>Coding</span><br>C, C++, Java</li> -->
+          </ul>
+        </div>
+        <div class="tile-content" id="education">
+          <ul>
+            <li>
+              <span>2020</span><br />Bachelor of Technology(Btech.) in Computer
+              Science and Engineering(CSE)<br />DGPA: 8.80
+            </li>
 
-                    <!-- <li><span>Coding</span><br>C, C++, Java</li> -->
-                </ul>
-            </div>
-            <div class="tile-content" id="education">
-                <ul>
-                    <li><span>2020</span><br>Bachelor of Technology(Btech.) in Computer Science and Engineering(CSE)<br>DGPA: 8.80
-                    </li>
-
-                    <li><span>2015</span><br>ISC (12<sup>th</sup> Standard)<br>83.5%</li>
-                    <li><span>2013</span><br>ICSE (10<sup>th</sup> Standard)<br>89.6%</li>
-                </ul>
-            </div>
-            <!-- <div class="tile-content" id="projects">
+            <li>
+              <span>2015</span><br />ISC (12<sup>th</sup> Standard)<br />83.5%
+            </li>
+            <li>
+              <span>2013</span><br />ICSE (10<sup>th</sup> Standard)<br />89.6%
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="tile-content" id="projects">
                 <ul>
                     <li><span>Portfolio Website</span></li>
 
@@ -119,106 +174,170 @@
                     <li><span>2013</span><br>ICSE (10th Standard)</li>
                 </ul>
             </div> -->
-        </div>
+      </div>
     </section>
 
     <section class="work" id="work">
-        <div class="myprojects">
-            <h1 class="mywork-title">My work</h1>
-            <div class="project-list">
-                <div class="project-tile">
-                    <img src="portfolio.jpg" alt="portfolio icon">
-                    <div class="layer">
-                        <h2>Portfolio Website</h2>
-                        <br>
-                        <p>Personal portfolio website built using HTML, CSS, JavaScript. It showcases my skills and has information about my education and work experience.</p>
-                        <a href="#"><img src="link.png" alt="link image"></a>
-                        <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <img src="weather.webp" alt="weather icon">
-                    <div class="layer">
-                        <h2>Weather App</h2>
-                        <br>
-                        <p>Weather app with current weather and 4 day weather forecast for any city. Powered by Openweather API.</p>
-                        <a href="https://weatherquery.free.nf" target="_blank"><img src="link.png" alt="link image"></a>
-                        <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <img src="notes.png" alt="memorandom icon">
-                    <div class="layer">
-                        <h2>Memo-Random</h2>
-                        <br>
-                        <p>Note taking app with Add, Delete, and Edit functionalities. Notes are saved in local storage. Created using React.</p>
-                        <a href="https://memorandom.free.nf" target="_blank"><img src="link.png" alt="link image"></a>
-                        <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <img src="mychat.png" alt="web chat icon">
-                    <div class="layer">
-                        <h2>myChat</h2>
-                        <br>
-                        <p>Real time online chat application made using Node.js and Socket.IO. Multiple people can join the conversation.</p>
-                        <a href="https://mychatweb.free.nf" target="_blank"><img src="link.png" alt="link image"></a>
-                        <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <img src="myblog.png" alt="blog site icon">
-                    <div class="layer">
-                        <h2>My Blog</h2>
-                        <br>
-                        <p>A blogging web app created using Express.js and MongoDB.</p>
-                        <a href="https://my-blog-ufcf.onrender.com" target="_blank"><img src="link.png" alt="link image"></a>
-                        <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <img src="taskicon.png" alt="task management icon">
-                    <div class="layer">
-                        <h2>Task Manager</h2>
-                        <br>
-                        <p>Responsive task manager application with an option to import tasks from Excel sheets. Supports all CRUD operations.</p>
-                        <a href="https://taskmanager.free.nf" target="_blank"><img src="link.png" alt="link image"></a>
-                        <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <img src="chart.webp" alt="Data Visualization Site icon">
-                    <div class="layer">
-                        <h2>Data Visualization</h2>
-                        <br>
-                        <p>Responsive data visualization using Chart.js. Made using React.js, Node.js, Express.js, and MongoDB.</p>
-                        <a href="https://visualization-task-data-iy95-pritzxms-gmailcoms-projects.vercel.app" target="_blank"><img src="link.png" alt="link image"></a>
-                        <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
-                    </div>
-                </div>
+      <div class="myprojects">
+        <h1 class="mywork-title">My work</h1>
+        <div class="project-list">
+          <div class="project-tile">
+            <img src="portfolio.jpg" alt="portfolio icon" />
+            <div class="layer">
+              <h2>Portfolio Website</h2>
+              <br />
+              <p>
+                Personal portfolio website built using HTML, CSS, JavaScript. It
+                showcases my skills and has information about my education and
+                work experience.
+              </p>
+              <a href="#"><img src="link.png" alt="link image" /></a>
+              <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
             </div>
+          </div>
+          <div class="project-tile">
+            <img src="weather.webp" alt="weather icon" />
+            <div class="layer">
+              <h2>Weather App</h2>
+              <br />
+              <p>
+                Weather app with current weather and 4 day weather forecast for
+                any city. Powered by Openweather API.
+              </p>
+              <a href="https://weatherquery.free.nf" target="_blank"
+                ><img src="link.png" alt="link image"
+              /></a>
+              <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+            </div>
+          </div>
+          <div class="project-tile">
+            <img src="notes.png" alt="memorandom icon" />
+            <div class="layer">
+              <h2>Memo-Random</h2>
+              <br />
+              <p>
+                Note taking app with Add, Delete, and Edit functionalities.
+                Notes are saved in local storage. Created using React.
+              </p>
+              <a href="https://memorandom.free.nf" target="_blank"
+                ><img src="link.png" alt="link image"
+              /></a>
+              <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+            </div>
+          </div>
+          <div class="project-tile">
+            <img src="mychat.png" alt="web chat icon" />
+            <div class="layer">
+              <h2>myChat</h2>
+              <br />
+              <p>
+                Real time online chat application made using Node.js and
+                Socket.IO. Multiple people can join the conversation.
+              </p>
+              <a href="https://mychatweb.free.nf" target="_blank"
+                ><img src="link.png" alt="link image"
+              /></a>
+              <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+            </div>
+          </div>
+          <div class="project-tile">
+            <img src="myblog.png" alt="blog site icon" />
+            <div class="layer">
+              <h2>My Blog</h2>
+              <br />
+              <p>A blogging web app created using Express.js and MongoDB.</p>
+              <a href="https://my-blog-ufcf.onrender.com" target="_blank"
+                ><img src="link.png" alt="link image"
+              /></a>
+              <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+            </div>
+          </div>
+          <div class="project-tile">
+            <img src="taskicon.png" alt="task management icon" />
+            <div class="layer">
+              <h2>Task Manager</h2>
+              <br />
+              <p>
+                Responsive task manager application with an option to import
+                tasks from Excel sheets. Supports all CRUD operations.
+              </p>
+              <a href="https://taskmanager.free.nf" target="_blank"
+                ><img src="link.png" alt="link image"
+              /></a>
+              <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+            </div>
+          </div>
+          <div class="project-tile">
+            <img src="chart.webp" alt="Data Visualization Site icon" />
+            <div class="layer">
+              <h2>Data Visualization</h2>
+              <br />
+              <p>
+                Responsive data visualization using Chart.js. Made using
+                React.js, Node.js, Express.js, and MongoDB.
+              </p>
+              <a
+                href="https://visualization-task-data-iy95-pritzxms-gmailcoms-projects.vercel.app"
+                target="_blank"
+                ><img src="link.png" alt="link image"
+              /></a>
+              <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+            </div>
+          </div>
+          <div class="project-tile">
+            <img src="speedo.png" alt="Speedo icon" />
+            <div class="layer">
+              <h2>Speedo</h2>
+              <br />
+              <p>
+                Visualize GPS Data in the form of map and statistics. Made using MERN Stack and Chakra UI
+              </p>
+              <a
+                href="https://vehicle-travel-details.vercel.app"
+                target="_blank"
+                ><img src="link.png" alt="link image"
+              /></a>
+              <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <footer id="foot">
-        <div class="footer-left">
-            <h1>Contact me</h1>
-            <p><a href="mailto:prithwish1705@gmail.com" style="text-decoration: none;color: white;"><img src="email.png"
-                        alt="">prithwish1705@gmail.com</a></p>
-            <p><img src="phone.png" alt="">(+91) 9876543210</p>
-            <div class="social">
-                <a href="https://www.linkedin.com/in/prithwish17" target="_blank"><img src="linkedin.png" alt=""></a>
-                <a href="https://github.com/PrithwishSarkar" target="_blank"><img src="github.png" alt=""></a>
-            </div>
-            <a href="Resume-Prithwish Sarkar.pdf" download class="btn">Download Resume</a>
+      <div class="footer-left">
+        <h1>Contact me</h1>
+        <p>
+          <a
+            href="mailto:prithwish1705@gmail.com"
+            style="text-decoration: none; color: white"
+            ><img src="email.png" alt="" />prithwish1705@gmail.com</a
+          >
+        </p>
+        <p><img src="phone.png" alt="" />(+91) 9051972382</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/prithwish17" target="_blank"
+            ><img src="linkedin.png" alt=""
+          /></a>
+          <a href="https://github.com/PrithwishSarkar" target="_blank"
+            ><img src="github.png" alt=""
+          /></a>
         </div>
-        <div class="footer-right">
-            <form name="submit-to-google-sheet">
-                <input type="text" name="Name" placeholder="Your Name" required>
-                <input type="email" name="Email" placeholder="Your Email" required>
-                <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
-                <button type="submit" class="btn btn2">Submit</button>
-            </form>
-        </div>
+        <a href="Resume-Prithwish Sarkar.pdf" download class="btn"
+          >Download Resume</a
+        >
+      </div>
+      <div class="footer-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required />
+          <input type="email" name="Email" placeholder="Your Email" required />
+          <textarea
+            name="Message"
+            rows="4"
+            placeholder="Your Message"
+          ></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
     </footer>
     <div id="copyright">&copy; Prithwish Sarkar, 2024</div>
     <!-- Load library from the CDN -->
@@ -229,6 +348,5 @@
         
     </script> -->
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

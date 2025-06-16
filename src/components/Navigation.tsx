@@ -28,7 +28,7 @@ export default function Navigation() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-[var(--navy)]/90 backdrop-blur-sm border-b border-[var(--navy-light)]/20' : 'bg-transparent'
+      scrolled || isMobileMenuOpen ? 'bg-[var(--navy)]/90 backdrop-blur-sm border-b border-[var(--navy-light)]/20' : 'bg-transparent'
     }`}>
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
